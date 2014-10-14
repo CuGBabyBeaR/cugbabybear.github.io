@@ -1,0 +1,23 @@
+.member{
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 2px 2px;
+    border: rgba(0,0,0,.35) solid 1px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+}
+.quality{
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 2px 2px;
+    border: rgba(0,0,0,.35) solid 1px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+}
+.chooser{
+    margin: 5px;
+    padding: 5px 10px;
+}
+.result{
+    width: 100%;
+}

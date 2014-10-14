@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../utils/js/string_format.js"></script>
+    <title>Js String Format</title>
+</head>
+<body>
+    <a href="../utils/js/string_format.js">查看源代码</a>
+    <style>
+    .res{
+        margin-left:15px; 
+        display: block;
+    }
+    </style>
+    <h3>示例</h3>
+    
+    <h4>使用数组格式化</h4>
+    <p>
+        调用方法：<span class="res">var result = template.format([value1,value2,value3]);</span>
+        模版字符串：<span class="res" id="template-1"></span>
+        内容：<span class="res" id="replacement-1">["China","CuGBabyBeaR","25"]</span>
+        结果：<span class="res" id="result-1"></span>
+    </p>
+
+    <h4>使用对象格式化</h4>
+    <p>
+        调用方法：<span class="res">var result = template.format({key1:value1,key2:value2});</span>
+        模版字符串：<span class="res" id="template-2"></span>
+        内容：<span class="res" id="replacement-2">{location:"China", name:"CuGBabyBeaR", age:"25"}</span>
+        结果：<span class="res" id="result-2"></span>
+    </p>
+    <script>
+    var template_1 = "Hello, my name is {1}, {2} years old. I come form {0}.";
+    var template_2 = "Hello, my name is {name}, {age} years old. I come form {location}.";
+    document.getElementById("template-1").innerHTML=template_1;
+    document.getElementById("template-2").innerHTML=template_2;
+    document.getElementById("result-1").innerHTML=template_1.format(["China","CuGBabyBeaR","25"]);
+    document.getElementById("result-2").innerHTML=template_2.format({location:"China", name:"CuGBabyBeaR", age:"25"});
+    </script>
+</body>
+</html>

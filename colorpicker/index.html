@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="colorpicker.css" />
+	<link rel="stylesheet" href="../utils/css/48g-colors.css" />
+	<title>团体颜色选择器</title>
+</head>
+<body>
+	<div class="container">
+		<div class="group-container">
+			<div class="group" id="group01">
+				<div class="title"><span class="title_text span-akb48">AKB48</span></div>
+				<div class="preview-top akb48" id=""><pre>#ef81b2  #f8b 
+hotpink 
+hsl(333,77%,72%) 
+rgb(239,129,178)</pre></div>
+				<div class="preview-bottom akb48-lg"></div>
+				<div class="code"></div>
+			</div>
+			<div class="group" id="group02">
+				<div class="title"><span class="title_text span-ske48">SKE48</span></div>
+				<div class="preview-top ske48" id=""><pre>#f8b600  #fb0 
+orange 
+hsl(44,100%,48%) 
+rgb(248,182,0) </pre></div>
+				<div class="preview-bottom ske48-lg"></div>
+				<div class="code"></div>
+			</div>
+			<div class="group" id="group03">
+				<div class="title"><span class="title_text span-nmb48">NMB48</span></div>
+				<div class="preview-top nmb48" id=""><pre>#a2590c  #a61
+saddlebrown 
+hsl(30,86%,34%) 
+rgb(162,89,12) </pre><span class="announce">*仅供参考</span></div>
+				<div class="preview-bottom nmb48-lg"></div>
+				<div class="code"></div>
+			</div>
+			<div class="group" id="group04">
+				<div class="title"><span class="title_text span-hkt48">HKT48</span></div>
+				<div class="preview-top hkt48" id=""><pre>#000000  #000 
+black 
+hsl(0,0%,0%) 
+rgb(0,0,0) </pre></div>
+				<div class="preview-bottom hkt48-lg"></div>
+				<div class="code"></div>
+			</div>
+			<div class="group" id="group05">
+				<div class="title"><span class="title_text span-jkt48">JKT48</span></div>
+				<div class="preview-top jkt48" id=""><pre>#e8211a  #f22 
+crimson 
+hsl(2,81%,50%) 
+rgb(232,33,26) </pre></div>
+				<div class="preview-bottom jkt48-lg"></div>
+				<div class="code"></div>
+			</div>
+			<div class="group" id="group06">
+				<div class="title"><span class="title_text span-snh48">SNH48</span></div>
+				<div class="preview-top snh48" id=""><pre>#8ed2f7  #9df 
+lightskyblue 
+hsl(201,86%,76%) 
+rgb(142,210,247)</pre></div>
+				<div class="preview-bottom snh48-lg"></div>
+				<div class="code"></div>
+			</div>
+			<div class="group" id="group07">
+				<div class="title"><span class="title_text span-sdn48">SDN48</span></div>
+				<div class="preview-top sdn48" id=""><pre>#48526b  #557 
+darkslategray 
+hsl(222,19%,35%) 
+rgb(72,82,107) </pre><span class="announce">*仅供参考</span></div>
+				<div class="preview-bottom sdn48-lg"></div>
+				<div class="code"></div>
+			</div>
+			<div class="group" id="group08">
+				<div class="title"><span class="title_text span-ngzk46">乃木坂46</span></div>
+				<div class="preview-top ngzk46" id=""><pre>#812991  #839 
+darkmagenta 
+hsl(290,55%,36%) 
+rgb(129,41,145)</pre></div>
+				<div class="preview-bottom ngzk46-lg"></div>
+				<div class="code"></div>
+			</div>
+		</div>
+		<div class="usage" id="usage">
+			<h3>使用CSS:</h3>
+			<ol>
+				<li><p> <a href="../utils/css/48g-colors.zip">下载</a>css文件</p></li>
+				<li><p>将解压得到的 "48g-colors.css" 文件放到合适的路径
+					<br />（例如 网页文件是/index.html css文件放在 /css/48g-colors.css ）</p></li>
+				<li><p>将CSS加入到到HTML中:
+					<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/48g-colors.css&quot; /&gt;</pre></p>
+					<p>或者跳过1、2步，直接导入托管在<a href="http://sae.sina.com.cn/">Sina App Engine</a>上的css:
+					<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;http://bears.sinaapp.com/utils/css/48g-colors.css&quot; /&gt;</pre>
+					</p>
+				</li>
+				<li><p>在网页元素中添加适当的类来调用样式，以实现效果。</p>
+					<ul>
+						<li><p>在需要设置背景颜色为团体代表色的地方,使用相应 <strong>团体名</strong> 的类:
+								<pre>&lt;span class=&quot;span-akb48&quot;&gt;这里的背景颜色是AKB48的颜色&lt;/span&gt;</pre>效果:<br />
+								<span class="akb48">这里的背景颜色是AKB48的颜色</span>
+							</p>
+						</li>
+						<li>
+							<p>在需要设置字体颜色为团体代表色的地方,使用相应团体的 <strong>span-[团体名]</strong> 类: 
+								<pre>&lt;span class=&quot;span-akb48&quot;&gt;这里的字色是AKB48的颜色&lt;/span&gt;</pre>效果:<br />
+								<span class="span-akb48">这里的字色是AKB48的颜色</span>
+							</p>
+						</li>
+						<li>
+							<p>如果你需要更好的效果，这里提供了各个渐变色。在需要设置背景颜色为团体代表色的地方，使用相应团体的 <strong>[团体名]-lg</strong> 类:
+								<pre>&lt;span class=&quot;span-akb48&quot;&gt;这里的背景颜色是AKB48的渐变色&lt;/span&gt;</pre>效果:<br />
+								<span class="akb48-lg">这里的背景颜色是AKB48的渐变色</span>
+							</p>
+						</li>
+					</ul>
+					<p>
+						如上的8个色块就是使用本css文件建立的。
+						标题使用了相应团队的<strong>span-[团体名]</strong>类，色块的上半部分使用了<strong>[团体名]</strong>类，色块的下半部分使用了<strong>[团体名]-lg</strong>类。
+					</p>
+				</li>
+				
+			</ol>
+		</div>
+		<div class="license">
+			<p>本css样式表文件可以以任何形式使用和修改和分发，但要求保留顶部的作者信息。</p>
+			<p>作者 BabyBeaR<br />		
+			有任何咨询、意见和建议 请到 <a href="http://tieba.baidu.com/f?kw=%B7%B1%BB%A8%D5%BD%BC%C7">繁花战记</a> 贴吧发帖<br />
+			或者发送邮件到: fxxd3740#163.com
+			<p>
+			欢迎有兴趣的人共同完善此css <a href="https://github.com/CuGBabyBeaR/48g-css">GitHub</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../utils/js/number_format.js"></script>
+    <title>Js Number Format</title>
+</head>
+<body>
+    <a href="../utils/js/number_format.js">查看源代码</a>
+    <style>
+    .res{
+        margin-left:15px; 
+        display: block;
+    }
+    </style>
+    <h3>示例</h3>
+    
+    <h4>将数字格式化</h4>
+    <p>
+        调用方法：<span class="res">function number_format(number, decimals, dec_point, thousands_sep);</span>
+        参数说明：<span class="res">number 要格式化的数字， decimals 小数位数， dec_point 小数点， thousands_sep 千分符号</span>
+    </p>
+    <p>
+        示例1：<span class="res">number_format(3.14159265359, 4, ',');</span>
+        结果：<span class="res" id="result-1"></span>
+    </p>
+    <p>
+        示例2：<span class="res">number_format(299792458);</span>
+        结果：<span class="res" id="result-2"></span>
+    </p>
+    <p>
+        示例3：<span class="res">number_format(299792458, 2, '.', ' ');</span>
+        结果：<span class="res" id="result-3"></span>
+    </p>
+    <script>
+    document.getElementById("result-1").innerHTML=number_format(3.14159265359, 4, ',');
+    document.getElementById("result-2").innerHTML=number_format(299792458);
+    document.getElementById("result-3").innerHTML=number_format(299792458, 2, '.', ' ');
+
+    </script>
+</body>
+</html>

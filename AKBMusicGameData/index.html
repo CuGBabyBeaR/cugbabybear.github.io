@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+
+    <script src='http://cdn.staticfile.org/angular.js/1.2.0rc3/angular.js'></script>
+    <script src='./script.js'></script>
+</head>
+<body>
+<div class="main" ng-app="requestor">
+    <div class="loading" ng-controller='LoadingCtrl' ng-hide='loaded'>
+        <button ng-click='loadData();'>加载数据</button>
+        <div ng-show='loading'>正在加载数据...</div>
+    </div>
+    <div class="chooser" ng-show='loaded' ng-controller='MemberCtrl'>
+        <div>选择成员</div>
+        <div class="member" ng-repeat='member in memberlist' ng-bind='member' ng-click='choose($index)'></div>
+    </div>
+    <div ng-show='member_choosed >= 0' ng-controller='QualityCtrl'>
+        <div class="chooser">
+            <div>选择卡片品质</div>
+            <div class="quality" ng-repeat='quality in qualitylist' ng-bind='quality' ng-click='choose($index)'></div>
+        </div>
+        <div>&nbsp;</div>
+        已选择成员 [<span ng-bind='memberlist[member_choosed]'></span>]  品质 [<span ng-bind='qualitylist[quality_choosed]'></span>]
+        <button ng-click='go()'>go</button>
+        <div class="result" ng-bind="result_required"></div>
+        <div class="result" ng-repeat='orgin in result_orgin' ng-bind="orgin"></div>
+    </div>
+</div>
+</body>
+</html>
