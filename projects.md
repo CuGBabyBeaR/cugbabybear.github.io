@@ -9,7 +9,7 @@
 
 ###前端/WEB
 <hr/>
-  - [小熊的网络实验室（本站）][13] [GitHub][16]
+  - [小熊的网络实验室（本站）][13] 源码：[GitHub][16]  
       本人的个人网站，基于Ajax的无刷新单页面应用。应用了History API、子页面都是用Markdown语言编写，由JS（或PHP）渲染。
   - [AKBQuiz][3]  
       AKB及其姊妹团体的提问应用
@@ -69,4 +69,4 @@
   [13]: ./home
   [14]: http://v.youku.com/v_show/id_XNTE0MzY4OTEy.html
   [15]:./dndcg3e.html
-  [16]: https://github.com/CuGBabyBeaR/cugbabybear.github.iol
+  [16]: https://github.com/CuGBabyBeaR/cugbabybear.github.io
